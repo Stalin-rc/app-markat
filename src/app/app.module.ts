@@ -17,6 +17,8 @@ import { RecoverPwComponent } from './components/recover-pw/recover-pw.component
 import { RecoverCodeComponent } from './components/recover-code/recover-code.component';
 import { ResetPwComponent } from './components/reset-pw/reset-pw.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component'; /*Importante*/
+/*Agregado*/
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatGridListModule,
     ReactiveFormsModule,
     AngularMaterialModule,
+    HttpClientModule, 
  
   ],
   providers: [],
