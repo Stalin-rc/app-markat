@@ -19,6 +19,10 @@ import { ResetPwComponent } from './components/reset-pw/reset-pw.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component'; /*Importante*/
 /*Agregado*/
 import { HttpClientModule } from '@angular/common/http';
+import { InventarioComponent } from './components/inventario/inventario.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
+import { VentasComponent } from './components/ventas/ventas.component';
+import { FinanzasComponent } from './components/finanzas/finanzas.component';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { HttpClientModule } from '@angular/common/http';
     RecoverPwComponent,
     RecoverCodeComponent,
     ResetPwComponent,
-    DashboardComponent
+    DashboardComponent,
+    InventarioComponent,
+    ClientesComponent,
+    VentasComponent,
+    FinanzasComponent
   ],
   imports: [
     BrowserModule,
