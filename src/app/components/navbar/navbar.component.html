@@ -1,41 +1,34 @@
-<body>
-  <header>
-    <a class="logo" routerLink="/dashboard"
-      ><img
-        class="img"
-        src="../../../assets/img/markat-logo.jpg"
-        alt="logo"
-      />MARKAT</a
-    >
-    <nav>
-      <ul class="nav__links">
-        <li>
-          <a href="#" class="font-700" routerLink="/dashboard">Dashboard</a>
-        </li>
-        <li>
-          <a href="#" class="font-700" routerLink="/dashboard/inventario">Inventario</a>
-        </li>
-        <li>
-          <a href="#" class="font-700" routerLink="/dashboard/clientes">Clientes</a>
-        </li>
-        <li><a href="#" class="font-700" routerLink="/dashboard/ventas">Ventas</a></li>
-        <li>
-          <a href="#" class="font-700" routerLink="/dashboard/finanzas">Finanzas</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="cta" href="#" >
-      <mat-icon>account_circle</mat-icon>
-    </a>
-    <p class="menu cta">Menu</p>
-  </header>
-  <div class="overlay">
-    <a class="close">&times;</a>
-    <div class="overlay__content">
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg fs-6">
+  <div class="container">
+      <a class="navbar-brand font-700" routerLink="/landing"> <img src="../../../assets/img/markat-logo.svg" alt="logo" class="logo"> Markat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active btn enlace" routerLink="/dashboard">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active btn enlace" routerLink="/dashboard/inventario">Inventario</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active btn enlace" routerLink="/dashboard/clientes">Clientes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active btn enlace" routerLink="/dashboard/ventas">Ventas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn enlace" routerLink="/dashboard/finanzas">Finanzas</a>
+            </li>
+           
+          </ul>
+          <span class="nav-item text-end">
+            <img src="https://i.postimg.cc/GpMdb6RN/bodeguero.png" alt="perfil" class="perfil"> <a class="mx-3"> Michael Rodriguez</a>
+         </span>
+      </div>
   </div>
-  <script type="text/javascript" src="mobile.js"></script>
-</body>
+</nav>
