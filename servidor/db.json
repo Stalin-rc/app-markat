@@ -36,5 +36,15 @@
       "precio": "2.5",
       "stock": "3"
     }
+  ],
+  "Ventas": [
+    { 
+      "id": 1,
+      "cliente": "Slowly Gonzáles Perez",
+      "productos": "Leche - Gloria, Fideos - Gloria, Agua - Cielo, Atun - Gloria",
+      "precioTotal": 60,
+      "credito": 1,
+      "fechaVenta": "07/10/2022"
+    } 
   ]
 }
