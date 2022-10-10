@@ -23,6 +23,7 @@ import { InventarioComponent } from './components/inventario/inventario.componen
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { VentasComponent } from './components/ventas/ventas.component';
 import { FinanzasComponent } from './components/finanzas/finanzas.component';
+import { NewEditProductComponent } from './components/new-edit-product/new-edit-product.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { FinanzasComponent } from './components/finanzas/finanzas.component';
     InventarioComponent,
     ClientesComponent,
     VentasComponent,
-    FinanzasComponent
+    FinanzasComponent,
+    NewEditProductComponent
   ],
   imports: [
     BrowserModule,

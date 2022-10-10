@@ -1,3 +1,4 @@
+import { NewEditProductComponent } from './components/new-edit-product/new-edit-product.component';
 import { InventarioComponent } from './components/inventario/inventario.component';
 import { VentasComponent } from './components/ventas/ventas.component';
 import { FinanzasComponent } from './components/finanzas/finanzas.component';
@@ -24,6 +25,8 @@ const routes: Routes = [
   {path: "dashboard/clientes",component:ClientesComponent},
   {path: "dashboard/ventas",component:VentasComponent},
   {path: "dashboard/finanzas",component:FinanzasComponent},
+  {path: "dashboard/inventario/new",component:NewEditProductComponent},
+  {path: "dashboard/inventario/edit/:id",component:NewEditProductComponent},
 
   {path: "**",component:LandingComponent}
 

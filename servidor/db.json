@@ -1,0 +1,40 @@
+{
+  "Productos": [
+    {
+      "id": 1,
+      "nombre": "Leche",
+      "marca": "Gloria",
+      "descripcion": "200g",
+      "img": "https://wongfood.vteximg.com.br/arquivos/ids/363948-750-750/59521001-01-65.jpg?v=637279704140170000",
+      "precio": "3.5",
+      "stock": 400
+    },
+    {
+      "id": 2,
+      "nombre": "Fideos",
+      "marca": "Gloria",
+      "descripcion": "400g",
+      "img": "https://benoti.pe/wp-content/uploads/2021/02/letrasynumeros-1.png",
+      "precio": 12,
+      "stock": 400
+    },
+    {
+      "id": 3,
+      "nombre": "Agua",
+      "marca": "Cielo",
+      "descripcion": "2.5 litros",
+      "img": "https://www.ajegroup.com/wp-content/uploads/2020/05/colombia-cielo.jpg",
+      "precio": "4",
+      "stock": "1"
+    },
+    {
+      "id": 4,
+      "nombre": "Atun",
+      "marca": "Gloria",
+      "descripcion": "200g",
+      "img": "https://plazavea.vteximg.com.br/arquivos/ids/6876866-1000-1000/20124082.jpg",
+      "precio": "2.5",
+      "stock": "3"
+    }
+  ]
+}
