@@ -15,11 +15,15 @@
     text-align: center;
 }
 
-.fil{
-height: 100%;
-
-}
 
 .fila{
     min-height: 44vh;
+}
+
+.contenido{
+    margin-top: 30px;
+}
+
+.contenido_2{
+    margin-top: 20px;
 }
