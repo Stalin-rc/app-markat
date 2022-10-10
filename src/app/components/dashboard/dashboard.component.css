@@ -1,2 +1,25 @@
 
+.container{
+    min-height: 88vh;
+    padding: 0;
+}
 
+.titulo{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #000;
+}
+ 
+
+.col #centro{
+    text-align: center;
+}
+
+.fil{
+height: 100%;
+
+}
+
+.fila{
+    min-height: 44vh;
+}
