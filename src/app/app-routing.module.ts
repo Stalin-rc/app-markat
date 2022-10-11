@@ -21,14 +21,14 @@ const routes: Routes = [
   {path: "recover-pw",component:RecoverPwComponent},
   {path: "recover-code",component:RecoverCodeComponent},
   {path: "reset-pw",component:ResetPwComponent},
-  {path: "dashboard",component:DashboardComponent},
-  {path: "dashboard/inventario",component:InventarioComponent},
-  {path: "dashboard/clientes",component:ClientesComponent},
-  {path: "dashboard/ventas",component:VentasComponent},
-  {path: "dashboard/ventas/new",component:NewVentasComponent},
-  {path: "dashboard/finanzas",component:FinanzasComponent},
-  {path: "dashboard/inventario/new",component:NewEditProductComponent},
+  {path: "dashboard/:id",component:DashboardComponent},
+  {path: "dashboard/inventario/:id",component:InventarioComponent},
+  {path: "dashboard/clientes/:id",component:ClientesComponent},
+  {path: "dashboard/ventas/:id",component:VentasComponent},
+  {path: "dashboard/finanzas/:id",component:FinanzasComponent},
+  {path: "dashboard/inventario/new/:id",component:NewEditProductComponent},
   {path: "dashboard/inventario/edit/:id",component:NewEditProductComponent},
+  {path: "dashboard/ventas/new/:id",component:NewVentasComponent},
 
   {path: "**",component:LandingComponent}
 

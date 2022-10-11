@@ -1,9 +1,11 @@
+import { BodeguerosService } from './../../services/bodegueros.service';
+import { Bodegueros } from './../../models/bodegueros';
 import { VentasService } from './../../services/ventas.service';
 import { Ventas } from './../../models/ventas';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-ventas',
@@ -14,13 +16,24 @@ export class VentasComponent implements OnInit {
 
   displayedColumns: string[] = ["cliente", "productos", "precioTotal","credito","fechaVenta","comprobante"];
   dataSource = new MatTableDataSource<Ventas>();
+  id!: number;
+  Bodegueros!: Bodegueros;
 
   constructor(private ventaService: VentasService,
               private snackbar: MatSnackBar,
-              private router: Router) { }
+              private router: Router,private activetedRoute: ActivatedRoute,
+              private BodeguerosService: BodeguerosService) { }
 
   ngOnInit(): void {
     this.getVentas();
+    this.id = this.activetedRoute.snapshot.params['id'];
+    this.BodeguerosService.getBodeguero(this.id).subscribe(
+      (data: Bodegueros) => {
+        this.Bodegueros = data;
+      }
+    )
+
+
   }
 
   applyFilter(event: Event) {
@@ -36,6 +49,6 @@ export class VentasComponent implements OnInit {
     )
   }
 
- 
+
 
 }

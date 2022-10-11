@@ -1,4 +1,30 @@
 {
+  "Bodegueros": [
+   
+    {
+      "id": 1,
+      "nombre": "Michael",
+      "apellido": "Rodriguez",
+      "correo": "michael@gmail.com",
+      "contraseña": "upc123",
+      "nnegocio": "Camucha",
+      "ruc": "1060364594",
+      "foto": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
+    },
+
+    {
+      "id": 1,
+      "nombre": "Carmen",
+      "apellido": "Lopez",
+      "correo": "carmen@gmail.com",
+      "contraseña": "upc123",
+      "nnegocio": "Camucha",
+      "ruc": "1060364594",
+      "foto": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
+    }
+
+  ],
+
   "Productos": [
     {
       "id": 1,
