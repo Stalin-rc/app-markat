@@ -5,5 +5,9 @@ table{
 .mat-form-field {
     font-size: 14px;
     width: 100%;
-  }
+}
   
+#button_ventas{
+    background-color: #2D9BF0;
+    color: white;
+}

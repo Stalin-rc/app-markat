@@ -41,9 +41,9 @@
     { 
       "id": 1,
       "cliente": "Slowly Gonzáles Perez",
-      "productos": "Leche - Gloria, Fideos - Gloria, Agua - Cielo, Atun - Gloria",
-      "precioTotal": 60,
-      "credito": 1,
+      "productos": "Leche - Gloria, Fideos - Gloria",
+      "precioTotal": 41.50,
+      "credito": "Si",
       "fechaVenta": "07/10/2022"
     } 
   ]

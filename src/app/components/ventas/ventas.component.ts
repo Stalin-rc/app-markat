@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class VentasComponent implements OnInit {
 
-  displayedColumns: string[] = ["cliente", "productos", "precioTotal","credito","fechaVenta","comprobante","actions"];
+  displayedColumns: string[] = ["cliente", "productos", "precioTotal","credito","fechaVenta","comprobante"];
   dataSource = new MatTableDataSource<Ventas>();
 
   constructor(private ventaService: VentasService,
@@ -36,17 +36,6 @@ export class VentasComponent implements OnInit {
     )
   }
 
-  deleteVentas(id: number):void {
-    this.ventaService.deleteVentas(id).subscribe({
-      next: (data) => {
-        this.snackbar.open("Se eliminó correctamente","OK",{duration:3000});
-        this.getVentas();
-        this.router.navigate(["/business/knowledges"]);
-      }, 
-      error: (err) => {
-        console.log(err);
-      }
-    })
-  }
+ 
 
 }

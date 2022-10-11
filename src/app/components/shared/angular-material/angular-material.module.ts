@@ -12,7 +12,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatRadioModule} from '@angular/material/radio';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -28,7 +30,10 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatIconModule,
     MatCardModule,
     MatToolbarModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatNativeDateModule
   ],
   exports:[
     MatGridListModule,
@@ -40,8 +45,10 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatToolbarModule,
     MatTableModule,
     MatSnackBarModule,
-    MatPaginatorModule
-
+    MatPaginatorModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatNativeDateModule
   ]
 })
 export class AngularMaterialModule { }

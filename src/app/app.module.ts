@@ -24,6 +24,7 @@ import { ClientesComponent } from './components/clientes/clientes.component';
 import { VentasComponent } from './components/ventas/ventas.component';
 import { FinanzasComponent } from './components/finanzas/finanzas.component';
 import { NewEditProductComponent } from './components/new-edit-product/new-edit-product.component';
+import { NewVentasComponent } from './components/new-ventas/new-ventas.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { NewEditProductComponent } from './components/new-edit-product/new-edit-
     ClientesComponent,
     VentasComponent,
     FinanzasComponent,
-    NewEditProductComponent
+    NewEditProductComponent,
+    NewVentasComponent
   ],
   imports: [
     BrowserModule,

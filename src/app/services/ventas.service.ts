@@ -13,8 +13,9 @@ export class VentasService {
     return this.http.get<Ventas[]>("http://localhost:3000/Ventas");
   }
 
-  deleteVentas(id: number){
-    return this.http.delete("http://localhost:3000/Ventas"+"/"+id.toString());
+  getVenta(id: number){
+    return this.http.get<Ventas>("http://localhost:3000/Ventas"+"/"+id.toString());
   }
+
 
 }

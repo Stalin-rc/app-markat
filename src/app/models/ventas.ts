@@ -3,7 +3,6 @@ export interface Ventas{
     cliente: string;
     productos: string;
     precioTotal: number;
-    credito: boolean;
-    fechaVenta: string;
-    comprobante: boolean;
+    credito: string;
+    fechaVenta: Date;
 }
