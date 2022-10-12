@@ -87,6 +87,41 @@ section{
     color: #5800FF;
 }
 
+.bg{
+    background-color: #5800FF;
+  }
+  
+  
+  .enlace:hover{
+    font-weight: bolder;
+    font-size:larger;
+    transition-duration: 1.5s;
+  }
+  
+  .logo{
+    width: 15%;
+  }
+  
+  .font-700{
+    font-size: 30px;
+  }
+  .font-700_Michael{
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .perfil{
+    border-radius: 50%;
+    width: 9%;
+    
+  }
+  .nav-item{
+    color: #FFF;
+    text-decoration: none;
+  }
+
+/*
+
 header{
     position: fixed;
     top:0; left:0;
@@ -127,7 +162,7 @@ header .navbar a{
 }
 
 header .navbar {
-   width: 100%;
+width: 0;
 }
 
 
@@ -145,7 +180,7 @@ header label{
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-}
+} */
 
 .home{
     display: flex;
