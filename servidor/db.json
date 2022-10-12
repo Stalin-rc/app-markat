@@ -144,6 +144,38 @@
       "precioTotal": 41.50,
       "credito": "Si",
       "fechaVenta": "07/10/2022"
-    } 
+    },
+    {
+      "id": 2,
+      "cliente": "Marle Lazaro Guevara",
+      "productos": "Agua - Cielo, Harina - Blanca Flor, Arroz - Bells",
+      "precioTotal": 40.40,
+      "credito": "Si",
+      "fechaVenta": "08/10/2022"
+    },
+    {
+      "id": 3,
+      "cliente": "Luis Ochoa Dual",
+      "productos": "Huevo - La Calera, Arroz - Costeño, Fideos - Molitalia, Atun - Gloria",
+      "precioTotal": 50.40,
+      "credito": "Si",
+      "fechaVenta": "08/10/2022"
+    },
+    {
+      "id": 4,
+      "cliente": "Mauricio Lopez Soto",
+      "productos": "Agua - Cielo, Leche - Gloria",
+      "precioTotal": 12.50,
+      "credito": "No",
+      "fechaVenta": "09/10/2022"
+    },
+    {
+      "id": 5,
+      "cliente": "Sara Mendoza Gomez",
+      "productos": "Fideos - Molitalia, Huevo - La Calera,  Harina - Blanca Flor",
+      "precioTotal": 46.00,
+      "credito": "No",
+      "fechaVenta": "09/10/2022"
+    }
   ]
 }

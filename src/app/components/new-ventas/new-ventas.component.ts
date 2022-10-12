@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,9 +13,11 @@ export class NewVentasComponent implements OnInit {
   id!:number;
   myForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,
+              private activated: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.id = this.activated.snapshot.params['id'];
     this.reactiveForm();
   }
 
