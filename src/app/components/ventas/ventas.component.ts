@@ -21,7 +21,8 @@ export class VentasComponent implements OnInit {
 
   constructor(private ventaService: VentasService,
               private snackbar: MatSnackBar,
-              private router: Router,private activetedRoute: ActivatedRoute,
+              private router: Router,
+              private activetedRoute: ActivatedRoute,
               private BodeguerosService: BodeguerosService) { }
 
   ngOnInit(): void {
@@ -32,8 +33,6 @@ export class VentasComponent implements OnInit {
         this.Bodegueros = data;
       }
     )
-
-
   }
 
   applyFilter(event: Event) {
