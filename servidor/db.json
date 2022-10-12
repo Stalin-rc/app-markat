@@ -38,9 +38,9 @@
     {
       "id": 2,
       "nombre": "Fideos",
-      "marca": "Gloria",
+      "marca": "Molitalia",
       "descripcion": "400g",
-      "img": "https://benoti.pe/wp-content/uploads/2021/02/letrasynumeros-1.png",
+      "img": "https://www.molitalia.com.pe/wp-content/uploads/2020/09/3D-MOLITALIA-TALLARIN.jpg",
       "precio": 12,
       "stock": 400
     },
@@ -61,6 +61,42 @@
       "img": "https://plazavea.vteximg.com.br/arquivos/ids/6876866-1000-1000/20124082.jpg",
       "precio": "2.5",
       "stock": "3"
+    },
+    {
+      "id": 5,
+      "nombre": "Arroz",
+      "marca": "Costeño",
+      "descripcion": "5kg",
+      "img": "https://plazavea.vteximg.com.br/arquivos/ids/554165-1000-1000/641425.jpg?v=637426577652870000",
+      "precio": "21.9",
+      "stock": "3"
+    },
+    {
+      "id": 6,
+      "nombre": "Harina",
+      "marca": "Blanca Flor",
+      "descripcion": "1kg",
+      "img": "https://plazavea.vteximg.com.br/arquivos/ids/13930278-1000-1000/680-1.jpg",
+      "precio": "8",
+      "stock": "3"
+    },
+    {
+      "id": 7,
+      "nombre": "Arroz",
+      "marca": "Bells",
+      "descripcion": "5kg",
+      "img": "https://plazavea.vteximg.com.br/arquivos/ids/414996-1000-1000/20198553.jpg",
+      "precio": "20",
+      "stock": "5"
+    },
+    {
+      "id": 8,
+      "nombre": "Huevo",
+      "marca": "La Calera",
+      "descripcion": "1kg",
+      "img": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-vaT3M2VX.jpg",
+      "precio": "14",
+      "stock": "7"
     }
   ],
   "Ventas": [
