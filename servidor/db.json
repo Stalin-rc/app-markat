@@ -97,8 +97,45 @@
       "img": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-vaT3M2VX.jpg",
       "precio": "14",
       "stock": "7"
+    },
+    {
+      "id": 9,
+      "nombre": "Mantequilla",
+      "marca": "Laive",
+      "descripcion": "180g",
+      "img": "http://laive.pe/wp-content/uploads/2015/07/WEB-225x420-px-Barra100g.png",
+      "precio": "10",
+      "stock": "7"
+    },
+    {
+      "id": 10,
+      "nombre": "Yogurt",
+      "marca": "Laive",
+      "descripcion": "340gr",
+      "img": "https://vegaperu.vtexassets.com/arquivos/ids/159174/7750151005548.jpg?v=637660223633330000",
+      "precio": "3",
+      "stock": "12"
+    },
+    {
+      "id": 11,
+      "nombre": "Queso",
+      "marca": "Braedt",
+      "descripcion": "200g",
+      "img": "https://vivanda.vtexassets.com/arquivos/ids/285638-800-450?v=637665802235200000&width=800&height=450&aspect=true",
+      "precio": "12",
+      "stock": "15"
+    },
+    {
+      "id": 12,
+      "nombre": "Jamon",
+      "marca": "Braedt",
+      "descripcion": "200g",
+      "img": "https://plazavea.vteximg.com.br/arquivos/ids/620401-450-450/20170942.jpg?v=637442647222800000",
+      "precio": "12.5",
+      "stock": "10"
     }
   ],
+  
   "Ventas": [
     { 
       "id": 1,
