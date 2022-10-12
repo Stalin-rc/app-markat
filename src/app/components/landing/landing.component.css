@@ -38,7 +38,7 @@ section{
     padding:.8rem 3rem;
     border-radius: 5rem;
     background:var(--gradient);
-    font-size: 1.7rem;
+    font-size: 1rem;
     color:#fff;
     background-color: #6201FF;
     cursor: pointer;
@@ -93,7 +93,7 @@ header{
     width:100%;
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    padding:2rem 9%;
+    padding:1rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,7 +117,7 @@ header .logo span{
 }
 
 header .navbar a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0rem;
     padding: 0rem;
     color:#fff;
@@ -157,7 +157,6 @@ header label{
 }
 
 .home .image img{
-    width:40vw;
     animation: float 3s linear infinite;
 }
 
@@ -171,7 +170,7 @@ header label{
 }
 
 .home .content h3{
-    font-size: 5.5rem;
+    font-size: 4.2rem;
     color:#333;
     text-transform: uppercase;
 }
@@ -182,7 +181,7 @@ header label{
 }
 
 .home .content p{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color:#666;
     padding:1rem 0;
 }
