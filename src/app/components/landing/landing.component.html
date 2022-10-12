@@ -1,14 +1,15 @@
-
-<head> 
+<head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <header>
 
-        <a href="#" class="logo"><img id="logo_navbar" src="../../../assets/img/markat-logo.jpg" alt=""> <span>MARKAT</span></a>
+        <a href="#" class="logo"><img id="logo_navbar" src="../../../assets/img/markat-logo.jpg" alt="">
+            <span>MARKAT</span></a>
 
         <input type="checkbox" id="menu-bar">
-        <label for="menu-bar"  class="fas fa-bars"></label>
+        <label for="menu-bar" class="fas fa-bars"></label>
 
         <nav class="navbar">
             <a href="#home">Inicio</a>
@@ -23,20 +24,29 @@
     <div id="navbar"></div>
 
     <section class="home" id="home">
-
-        <div class="content">
-            <h3 id="text-home-1">HAZ CRECER TUS VENTAS CON <span id="text-home-2"> LAS HERRAMIENTAS DE Markat</span></h3>
-            <p>Lleva un mejor control de tu negocio administrando en una
-                sola plataforma tus finanzas, inventario, ventas
-                y clientes.</p>
-            <a href="#" class="btn btn-home" routerLink="/register">Registrarse</a>
-        </div>
-
-        <div class="image">
-            <img src="../../../assets/img-landing/home-img.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <br>
+                        <br>
+                        <h3 id="text-home-1">HAZ CRECER TUS VENTAS CON <span id="text-home-2"> LAS HERRAMIENTAS DE
+                                Markat</span></h3>
+                        <p>Lleva un mejor control de tu negocio administrando en una
+                            sola plataforma tus finanzas, inventario, ventas
+                            y clientes.</p>
+                        <a href="#" class="btn btn-home" routerLink="/register">Registrarse</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="../../../assets/img-landing/home-img.png" alt="" class="img-fluid p-5">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
- 
+
     <section class="about" id="about">
 
         <h1 class="heading"> ¿Qué es Markat? </h1>
@@ -44,15 +54,15 @@
         <div class="column">
 
             <div class="image" data-aos="fade-right">
-                <img src="../../../assets/img-landing/about-img.png" alt=""> 
+                <img src="../../../assets/img-landing/about-img.png" alt="">
             </div>
 
             <div class="content">
                 <h3>¿Quieres un mejor control de tu negocio y aumentar tus ventas?</h3>
-                <p>Markat es una aplicación web que te permite controlar tu negocio 
-                    por medio de las herramientas de gestión de inventario, finanzas y 
-                    ventas. Podrás generar boletas electrónicas y brindar crédito a tus 
-                    clientes más fieles. Además, tus decisiones mejoraran gracias al 
+                <p>Markat es una aplicación web que te permite controlar tu negocio
+                    por medio de las herramientas de gestión de inventario, finanzas y
+                    ventas. Podrás generar boletas electrónicas y brindar crédito a tus
+                    clientes más fieles. Además, tus decisiones mejoraran gracias al
                     resumen de datos mensuales.
                 </p>
                 <div class="buttons">
@@ -96,9 +106,9 @@
         </div>
 
     </section>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
     <section class="contact" id="contact">
 
         <div class="image" data-aos="fade-right">
@@ -141,7 +151,8 @@
 
             <div class="box">
                 <h3>Sobre nosotros</h3>
-                <p>Somos una StartUp que buscamos que los negocios pequeños aumenten sus ventas con herramientas que simplifiquen sus procesos.</p>
+                <p>Somos una StartUp que buscamos que los negocios pequeños aumenten sus ventas con herramientas que
+                    simplifiquen sus procesos.</p>
             </div>
 
             <div class="box">
@@ -174,17 +185,14 @@
 
         </div>
 
-        <h1 class="credit"> &copy; copyright 2022 | Todos los derechos reservados por Markat, Inc.  </h1>
+        <h1 class="credit"> &copy; copyright 2022 | Todos los derechos reservados por Markat, Inc. </h1>
 
     </div>
 
-    <script  src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
-    </script> 
+    </script>
 </body>
-
-
-
