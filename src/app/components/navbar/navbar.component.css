@@ -16,6 +16,10 @@
 .font-700{
   font-size: 30px;
 }
+.font-700_Michael{
+  font-weight: bolder;
+  font-size: 15px;
+}
 
 .perfil{
   border-radius: 50%;
