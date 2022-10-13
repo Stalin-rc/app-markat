@@ -191,6 +191,60 @@
       "total_gastado": 180,
       "status_morosidad": "No es moroso",
       "fecha_pago": "15/11/2022"
+    },
+    {
+      "id": 3,
+      "nombre": "Pablo Cueva",
+      "dni": "41655573",
+      "creditos": 100,
+      "total_gastado": 95,
+      "status_morosidad": "No es moroso",
+      "fecha_pago": "20/11/2022"
+    },
+    {
+      "id": 4,
+      "nombre": "Maria Salazar",
+      "dni": "26752433",
+      "creditos": 90,
+      "total_gastado": 60,
+      "status_morosidad": "es moroso",
+      "fecha_pago": "10/10/2022"
+    },
+    {
+      "id": 5,
+      "nombre": "Luis Carvajal",
+      "dni": "74621533",
+      "creditos": 100,
+      "total_gastado": 96,
+      "status_morosidad": "es moroso",
+      "fecha_pago": "7/10/2022"
+    },
+    {
+      "id": 6,
+      "nombre": "Sebastian Argon",
+      "dni": "35642216",
+      "creditos": 120,
+      "total_gastado": 100,
+      "status_morosidad": "No es moroso",
+      "fecha_pago": "16/11/2022"
+    },
+    {
+      "id": 7,
+      "nombre": "Sully Peña",
+      "dni": "76432253",
+      "creditos": 80,
+      "total_gastado": 20,
+      "status_morosidad": "No es moroso",
+      "fecha_pago": "20/11/2022"
+    },
+    {
+      "id": 8,
+      "nombre": "Leo Quispe",
+      "dni": "46312546",
+      "creditos": 150,
+      "total_gastado": 130,
+      "status_morosidad": "No es moroso",
+      "fecha_pago": "19/11/2022"
     }
   ]
 }
