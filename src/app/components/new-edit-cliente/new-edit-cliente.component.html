@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <br>
+    <br>
+    <h4>Clientes </h4>
+    <br>
+    <br>
+    <form [formGroup]="myForm">
+        <div class="row">
+            <div class="col-md-6 px-5">
+                <br>
+                <br>
+                <mat-form-field appearance="standard" class="w-100">
+                    <mat-label>Nombre del cliente</mat-label>
+                    <input matInput placeholder="Cliente" #input formControlName="nombre">
+                </mat-form-field><br>
+                <mat-form-field appearance="standard" class="w-100">
+                    <mat-label>Dni</mat-label>
+                    <input matInput placeholder="Cliente" #input formControlName="dni" type="number">
+                </mat-form-field><br>
+                <mat-form-field appearance="standard" class="w-100">
+                    <mat-label>Creditos</mat-label>
+                    <input matInput placeholder="Cliente" #input formControlName="creditos" type="number">
+                </mat-form-field><br>
+                <mat-form-field appearance="standard" class="w-100">
+                    <mat-label>Total_gastado</mat-label>
+                    <input matInput placeholder="Cliente" #input formControlName="total_gastado" type="number">
+                </mat-form-field><br>
+
+                <mat-form-field appearance="standard" class="w-100">
+                    <mat-label>status_morosidad</mat-label>
+                    <input matInput placeholder="Cliente" #input formControlName="status_morosidad">
+                </mat-form-field><br>
+                <mat-form-field appearance="standard" class="w-100">
+                    <mat-label>fecha_pago</mat-label>
+                    <input matInput placeholder="Cliente" #input formControlName="fecha_pago">
+                </mat-form-field><br>
+            </div>
+ 
+            <div class="d-flex justify-content-between mt-4">
+                <button mat-raised-button color="accent" class="ms-4" routerLink="/dashboard/cliente">Cancelar</button>
+                <button mat-raised-button color="primary"  (click)="addCliente()" [disabled]="myForm.invalid">Listo</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -13,6 +13,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { NewEditClienteComponent } from './components/new-edit-cliente/new-edit-cliente.component';
 
 const routes: Routes = [
   {path: "landing",component:LandingComponent},
@@ -24,6 +25,8 @@ const routes: Routes = [
   {path: "dashboard/:id",component:DashboardComponent},
   {path: "dashboard/inventario/:id",component:InventarioComponent},
   {path: "dashboard/clientes/:id",component:ClientesComponent},
+  {path: "dashboard/cliente/new",component:NewEditClienteComponent},
+  {path: "dashboard/cliente/edit/:id",component:NewEditClienteComponent},
   {path: "dashboard/ventas/:id",component:VentasComponent},
   {path: "dashboard/finanzas/:id",component:FinanzasComponent},
   {path: "dashboard/inventario/new/:id",component:NewEditProductComponent},

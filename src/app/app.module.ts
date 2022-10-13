@@ -26,6 +26,7 @@ import { FinanzasComponent } from './components/finanzas/finanzas.component';
 import { NewEditProductComponent } from './components/new-edit-product/new-edit-product.component';
 import { NewVentasComponent } from './components/new-ventas/new-ventas.component';
 import { NavLandingComponent } from './components/nav-landing/nav-landing.component';
+import { NewEditClienteComponent } from './components/new-edit-cliente/new-edit-cliente.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { NavLandingComponent } from './components/nav-landing/nav-landing.compon
     FinanzasComponent,
     NewEditProductComponent,
     NewVentasComponent,
-    NavLandingComponent
+    NavLandingComponent,
+    NewEditClienteComponent
   ],
   imports: [
     BrowserModule,

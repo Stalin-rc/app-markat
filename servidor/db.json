@@ -1,6 +1,5 @@
 {
   "Bodegueros": [
-   
     {
       "id": 1,
       "nombre": "Michael",
@@ -11,7 +10,6 @@
       "ruc": "1060364594",
       "foto": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
     },
-
     {
       "id": 1,
       "nombre": "Carmen",
@@ -22,9 +20,7 @@
       "ruc": "1060364594",
       "foto": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
     }
-
   ],
-
   "Productos": [
     {
       "id": 1,
@@ -135,13 +131,12 @@
       "stock": "10"
     }
   ],
-  
   "Ventas": [
-    { 
+    {
       "id": 1,
       "cliente": "Slowly Gonzáles Perez",
       "productos": "Leche - Gloria, Fideos - Gloria",
-      "precioTotal": 41.50,
+      "precioTotal": 41.5,
       "credito": "Si",
       "fechaVenta": "07/10/2022"
     },
@@ -149,7 +144,7 @@
       "id": 2,
       "cliente": "Marle Lazaro Guevara",
       "productos": "Agua - Cielo, Harina - Blanca Flor, Arroz - Bells",
-      "precioTotal": 40.40,
+      "precioTotal": 40.4,
       "credito": "Si",
       "fechaVenta": "08/10/2022"
     },
@@ -157,7 +152,7 @@
       "id": 3,
       "cliente": "Luis Ochoa Dual",
       "productos": "Huevo - La Calera, Arroz - Costeño, Fideos - Molitalia, Atun - Gloria",
-      "precioTotal": 50.40,
+      "precioTotal": 50.4,
       "credito": "Si",
       "fechaVenta": "08/10/2022"
     },
@@ -165,7 +160,7 @@
       "id": 4,
       "cliente": "Mauricio Lopez Soto",
       "productos": "Agua - Cielo, Leche - Gloria",
-      "precioTotal": 12.50,
+      "precioTotal": 12.5,
       "credito": "No",
       "fechaVenta": "09/10/2022"
     },
@@ -173,9 +168,29 @@
       "id": 5,
       "cliente": "Sara Mendoza Gomez",
       "productos": "Fideos - Molitalia, Huevo - La Calera,  Harina - Blanca Flor",
-      "precioTotal": 46.00,
+      "precioTotal": 46,
       "credito": "No",
       "fechaVenta": "09/10/2022"
+    }
+  ],
+  "Cliente": [
+    {
+      "id": 1,
+      "nombre": "Lucho Gonzales",
+      "dni": "74562215",
+      "creditos": "100",
+      "total_gastado": "80",
+      "status_morosidad": "no es moroso",
+      "fecha_pago": "28/10/2022"
+    },
+    {
+      "id": 2,
+      "nombre": "jesus sideral",
+      "dni": "45625533",
+      "creditos": 250,
+      "total_gastado": 180,
+      "status_morosidad": "no es moroso",
+      "fecha_pago": "15/11/2022"
     }
   ]
 }
