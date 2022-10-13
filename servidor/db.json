@@ -180,7 +180,7 @@
       "dni": "74562215",
       "creditos": "100",
       "total_gastado": "80",
-      "status_morosidad": "no es moroso",
+      "status_morosidad": "No es moroso",
       "fecha_pago": "28/10/2022"
     },
     {
@@ -189,7 +189,7 @@
       "dni": "45625533",
       "creditos": 250,
       "total_gastado": 180,
-      "status_morosidad": "no es moroso",
+      "status_morosidad": "No es moroso",
       "fecha_pago": "15/11/2022"
     }
   ]
