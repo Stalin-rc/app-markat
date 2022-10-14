@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Cliente } from './../../models/cliente';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
@@ -12,10 +13,13 @@ export class ClientesComponent implements OnInit {
 
   displayedColumns: string[] = ['Nombre_Apellido', 'Dni', 'Creditos', 'Total_gastado', 'Status_morosidad', 'Fecha_pago', 'accion'];
   dataSource = new MatTableDataSource<Cliente>();
-  constructor(private clienteService: ClienteService) { }
+  id!:number;
+  constructor(private clienteService: ClienteService, private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getClientes();
+    this.id=this.ActivatedRoute.snapshot.params["id"]; 
+
   }
 
   applyFilter(event: Event) {
