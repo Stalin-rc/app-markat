@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
         this.Bodegueros = data;
       }
     )
-
   }
+
 
 }
