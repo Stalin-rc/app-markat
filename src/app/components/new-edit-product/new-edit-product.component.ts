@@ -1,3 +1,5 @@
+import { Bodegueros } from './../../models/bodegueros';
+import { BodeguerosService } from './../../services/bodegueros.service';
 import { Producto } from './../../models/producto';
 import { ProductosService } from './../../services/productos.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -10,17 +12,30 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./new-edit-product.component.css']
 })
 export class NewEditProductComponent implements OnInit {
-  id!: number;
+  id_producto!: number;
   myForm!: FormGroup;
   url!: string;
+  /*Bodeguero*/
+  id!:number;
+  Bodegueros!: Bodegueros;
+
   constructor(private activated: ActivatedRoute, private formBuilder: FormBuilder, private productoService: ProductosService,
-    private router: Router) { }
+    private router: Router, private BodeguerosService: BodeguerosService,
+    private activetedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id = this.activated.snapshot.params['id'];
+    this.id_producto = this.activated.snapshot.params['id'];
     this.reactiveForm();
     this.cargarFormulario();
-    console.log(this.id);
+    console.log(this.id_producto);
+    /*Bodeguero*/
+
+    this.id = this.activetedRoute.snapshot.params['id'];
+    this.BodeguerosService.getBodeguero(this.id).subscribe(
+      (data: Bodegueros) => {
+        this.Bodegueros = data;
+      }
+    )
   }
 
   reactiveForm() {
@@ -35,8 +50,8 @@ export class NewEditProductComponent implements OnInit {
   }
 
   cargarFormulario() {
-    if (this.id != undefined) {
-      this.productoService.getProducto(this.id).subscribe(
+    if (this.id_producto != undefined) {
+      this.productoService.getProducto(this.id_producto).subscribe(
         (data: Producto) => {
           this.myForm.get('nombre')?.setValue(data.nombre);
           this.myForm.get('marca')?.setValue(data.marca);
@@ -49,13 +64,13 @@ export class NewEditProductComponent implements OnInit {
       )
     } else {
       this.url = "../../../assets/logo.png";
-      this.id = 0;
+      this.id_producto = 0;
     }
   }
 
   addProducto() {
     const producto: Producto = {
-      id: this.id,
+      id: this.id_producto,
       nombre: this.myForm.get('nombre')?.value,
       marca: this.myForm.get('marca')?.value,
       descripcion: this.myForm.get('descripcion')?.value,
@@ -64,23 +79,23 @@ export class NewEditProductComponent implements OnInit {
       stock: this.myForm.get('unidades')?.value
     }
 
-    if (this.id == 0) {
+    if (this.id_producto == 0) {
 
       this.productoService.addProducto(producto).subscribe({
         next: (data: Producto) => {
-          this.router.navigate(['dashboard/inventario']);
+          this.router.navigate(['dashboard/{{id}}/inventario']);
         },
         error: (e) => {
           console.log(e);
         }
       })
     } else {
-      this.productoService.editProducto(producto).subscribe({
+      this.productoService.editProducto(producto).subscribe({ 
         next: (data: Producto) => {
-          this.router.navigate(['dashboard/inventario']);
+          this.router.navigate([`dashboard/${this.Bodegueros.id}/inventario`]);
         },
         error: (e) => {
-          console.log(e);
+          console.log(e); 
         }
       })
     }

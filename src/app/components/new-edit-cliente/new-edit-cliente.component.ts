@@ -1,3 +1,5 @@
+import { BodeguerosService } from './../../services/bodegueros.service';
+import { Bodegueros } from './../../models/bodegueros';
 import { Cliente } from './../../models/cliente';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -11,17 +13,33 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class NewEditClienteComponent implements OnInit {
 
-  id!: number;
+  id_cliente!: number;
   myForm!: FormGroup;
   url!: string;
+   /*Bodeguero*/
+   id!:number;
+   Bodegueros!: Bodegueros;
+
+   
   constructor(private activated: ActivatedRoute, private formBuilder: FormBuilder, private clienteService: ClienteService,
-    private router: Router) { }
+    private router: Router, private BodeguerosService: BodeguerosService,
+    private activetedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id = this.activated.snapshot.params['id'];
+    this.id_cliente = this.activated.snapshot.params['id'];
     this.reactiveForm();
     this.cargarFormulario();
     console.log(this.id);
+
+     /*Bodeguero*/
+
+     this.id = this.activetedRoute.snapshot.params['id'];
+     this.BodeguerosService.getBodeguero(this.id).subscribe(
+       (data: Bodegueros) => {
+         this.Bodegueros = data;
+       }
+     )
+
   }
 
   reactiveForm() {
@@ -36,8 +54,8 @@ export class NewEditClienteComponent implements OnInit {
   }
 
   cargarFormulario() {
-    if (this.id != undefined) {
-      this.clienteService.getclente(this.id).subscribe(
+    if (this.id_cliente != undefined) {
+      this.clienteService.getclente(this.id_cliente).subscribe(
         (data: Cliente) => {
           this.myForm.get('nombre')?.setValue(data.nombre);
           this.myForm.get('DNI')?.setValue(data.dni);
@@ -49,13 +67,13 @@ export class NewEditClienteComponent implements OnInit {
         }
       )
     } else {
-      this.id = 0;
+      this.id_cliente = 0;
     }
   }
 
   addCliente() {
     const cliente: Cliente = {
-      id: this.id,
+      id: this.id_cliente,
       nombre: this.myForm.get('nombre')?.value,
       dni: this.myForm.get('DNI')?.value,
       creditos: this.myForm.get('creditos')?.value,
@@ -64,11 +82,11 @@ export class NewEditClienteComponent implements OnInit {
       fecha_pago: this.myForm.get('fecha_pago')?.value
     }
 
-    if (this.id == 0) {
+    if (this.id_cliente == 0) {
 
       this.clienteService.addCliente(cliente).subscribe({
         next: (data: Cliente) => {
-          this.router.navigate(['dashboard/cliente']);
+          this.router.navigate([`dashboard/${this.Bodegueros.id}/clientes`]);
         },
         error: (e: any) => {
           console.log(e);
@@ -77,7 +95,7 @@ export class NewEditClienteComponent implements OnInit {
     } else {
       this.clienteService.editCliente(cliente).subscribe({
         next: (data: Cliente) => {
-          this.router.navigate(['dashboard/cliente']);
+          this.router.navigate([`dashboard/${this.Bodegueros.id}/clientes`]);
         },
         error: (e: any) => {
           console.log(e);

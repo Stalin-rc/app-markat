@@ -26,11 +26,11 @@ const routes: Routes = [
   {path: "dashboard/:id/inventario",component:InventarioComponent},
   {path: "dashboard/:id/clientes",component:ClientesComponent},
   {path: "dashboard/:id/clientes/new",component:NewEditClienteComponent},
-  {path: "dashboard/:id/clientes/edit/:id",component:NewEditClienteComponent},
+  {path: "dashboard/:id/clientes/edit/:id_cliente",component:NewEditClienteComponent},
   {path: "dashboard/:id/ventas",component:VentasComponent},
   {path: "dashboard/:id/finanzas",component:FinanzasComponent},
   {path: "dashboard/:id/inventario/new",component:NewEditProductComponent},
-  {path: "dashboard/:id/inventario/edit/:id",component:NewEditProductComponent},
+  {path: "dashboard/:id/inventario/edit/:id_producto",component:NewEditProductComponent},
   {path: "dashboard/:id/ventas/new",component:NewVentasComponent},
 
   {path: "**",component:LandingComponent}
