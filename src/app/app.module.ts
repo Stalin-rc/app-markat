@@ -28,6 +28,7 @@ import { NewVentasComponent } from './components/new-ventas/new-ventas.component
 import { NavLandingComponent } from './components/nav-landing/nav-landing.component';
 import { NewEditClienteComponent } from './components/new-edit-cliente/new-edit-cliente.component';
 
+import {GoogleChartsModule} from 'angular-google-charts'
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { NewEditClienteComponent } from './components/new-edit-cliente/new-edit-
     ReactiveFormsModule,
     AngularMaterialModule,
     HttpClientModule, 
- 
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
