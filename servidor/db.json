@@ -186,6 +186,7 @@
     {
       "id": 2,
       "nombre": "Jesus Sideral",
+      "dni": 12312333,
       "creditos": 2500,
       "total_gastado": 180,
       "status_morosidad": "No es moroso",
@@ -221,8 +222,8 @@
     {
       "id": 6,
       "nombre": "Sebastian Argon",
-      "dni": "35642216",
-      "creditos": 120,
+      "dni": 31233456,
+      "creditos": 1200,
       "total_gastado": 100,
       "status_morosidad": "No es moroso",
       "fecha_pago": "16/11/2022"

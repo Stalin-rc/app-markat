@@ -26,7 +26,7 @@ export class NewEditClienteComponent implements OnInit {
     private activetedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id_cliente = this.activated.snapshot.params['id'];
+    this.id_cliente = this.activated.snapshot.params['id_cliente'];
     this.reactiveForm();
     this.cargarFormulario();
     console.log(this.id);
@@ -58,12 +58,11 @@ export class NewEditClienteComponent implements OnInit {
       this.clienteService.getclente(this.id_cliente).subscribe(
         (data: Cliente) => {
           this.myForm.get('nombre')?.setValue(data.nombre);
-          this.myForm.get('DNI')?.setValue(data.dni);
+          this.myForm.get('dni')?.setValue(data.dni);
           this.myForm.get('creditos')?.setValue(data.creditos);
           this.myForm.get('total_gastado')?.setValue(data.total_gastado);
           this.myForm.get('status_morosidad')?.setValue(data.status_morosidad);
           this.myForm.get('fecha_pago')?.setValue(data.fecha_pago);
-    
         }
       )
     } else {
@@ -75,7 +74,7 @@ export class NewEditClienteComponent implements OnInit {
     const cliente: Cliente = {
       id: this.id_cliente,
       nombre: this.myForm.get('nombre')?.value,
-      dni: this.myForm.get('DNI')?.value,
+      dni: this.myForm.get('dni')?.value,
       creditos: this.myForm.get('creditos')?.value,
       total_gastado: this.myForm.get('total_gastado')?.value,
       status_morosidad: this.myForm.get('status_morosidad')?.value,

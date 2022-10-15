@@ -24,7 +24,7 @@ export class NewEditProductComponent implements OnInit {
     private activetedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id_producto = this.activated.snapshot.params['id'];
+    this.id_producto = this.activated.snapshot.params['id_producto'];
     this.reactiveForm();
     this.cargarFormulario();
     console.log(this.id_producto);
@@ -83,7 +83,7 @@ export class NewEditProductComponent implements OnInit {
 
       this.productoService.addProducto(producto).subscribe({
         next: (data: Producto) => {
-          this.router.navigate(['dashboard/{{id}}/inventario']);
+          this.router.navigate([`dashboard/${this.Bodegueros.id}/inventario`]);
         },
         error: (e) => {
           console.log(e);

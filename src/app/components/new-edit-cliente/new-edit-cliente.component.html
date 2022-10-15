@@ -2,7 +2,8 @@
 <div class="container">
     <br>
     <br>
-    <h4>Clientes </h4>
+    <h4 *ngIf="id_cliente==0">Clientes | Añadir</h4>
+    <h4 *ngIf="id_cliente!=0">Clientes | Editar</h4>
    
     <form [formGroup]="myForm">
         <div class="row">
