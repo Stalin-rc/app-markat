@@ -49,7 +49,8 @@ export class NewEditClienteComponent implements OnInit {
       creditos: ['',[Validators.required]],
       total_gastado: ['',Validators.required],
       status_morosidad: ['',Validators.required],
-      fecha_pago: ['',Validators.required]
+      fecha_pago: ['',Validators.required],
+      url: ['',Validators.required]
     })
   }
 
@@ -63,6 +64,8 @@ export class NewEditClienteComponent implements OnInit {
           this.myForm.get('total_gastado')?.setValue(data.total_gastado);
           this.myForm.get('status_morosidad')?.setValue(data.status_morosidad);
           this.myForm.get('fecha_pago')?.setValue(data.fecha_pago);
+          this.myForm.get('url')?.setValue(data.img);
+          this.url = data.img;
         }
       )
     } else {
@@ -78,7 +81,8 @@ export class NewEditClienteComponent implements OnInit {
       creditos: this.myForm.get('creditos')?.value,
       total_gastado: this.myForm.get('total_gastado')?.value,
       status_morosidad: this.myForm.get('status_morosidad')?.value,
-      fecha_pago: this.myForm.get('fecha_pago')?.value
+      fecha_pago: this.myForm.get('fecha_pago')?.value,
+      img: this.myForm.get('url')?.value,
     }
 
     if (this.id_cliente == 0) {
