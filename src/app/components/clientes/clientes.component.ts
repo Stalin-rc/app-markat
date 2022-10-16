@@ -13,7 +13,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class ClientesComponent implements OnInit {
 
-  displayedColumns: string[] = ['Nombre_Apellido', 'Dni', 'Creditos', 'Total_gastado', 'Status_morosidad', 'Fecha_pago', 'accion'];
+  displayedColumns: string[] = ['Nombre_Apellido', 'Dni', 'Creditos', 'Total_gastado', 'Status_morosidad', 'Fecha_pago', 'imagen', 'accion'];
   dataSource = new MatTableDataSource<Cliente>();
   id_cliente!:number;
    /*Bodeguero*/
