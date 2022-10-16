@@ -181,7 +181,8 @@
       "creditos": "100",
       "total_gastado": "80",
       "status_morosidad": "No es moroso",
-      "fecha_pago": "28/10/2022"
+      "fecha_pago": "28/10/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 2,
@@ -190,7 +191,8 @@
       "creditos": 2500,
       "total_gastado": 180,
       "status_morosidad": "No es moroso",
-      "fecha_pago": "15/11/2022"
+      "fecha_pago": "15/11/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 3,
@@ -199,7 +201,8 @@
       "creditos": 100,
       "total_gastado": 95,
       "status_morosidad": "No es moroso",
-      "fecha_pago": "20/11/2022"
+      "fecha_pago": "20/11/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 4,
@@ -208,7 +211,8 @@
       "creditos": 90,
       "total_gastado": 60,
       "status_morosidad": "es moroso",
-      "fecha_pago": "10/10/2022"
+      "fecha_pago": "10/10/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 5,
@@ -217,7 +221,8 @@
       "creditos": 100,
       "total_gastado": 96,
       "status_morosidad": "es moroso",
-      "fecha_pago": "7/10/2022"
+      "fecha_pago": "7/10/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 6,
@@ -226,7 +231,8 @@
       "creditos": 1200,
       "total_gastado": 100,
       "status_morosidad": "No es moroso",
-      "fecha_pago": "16/11/2022"
+      "fecha_pago": "16/11/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 7,
@@ -235,7 +241,8 @@
       "creditos": 80,
       "total_gastado": 20,
       "status_morosidad": "No es moroso",
-      "fecha_pago": "20/11/2022"
+      "fecha_pago": "20/11/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     },
     {
       "id": 8,
@@ -244,7 +251,8 @@
       "creditos": 150,
       "total_gastado": 130,
       "status_morosidad": "No es moroso",
-      "fecha_pago": "19/11/2022"
+      "fecha_pago": "19/11/2022",
+      "img":"https://i.postimg.cc/q7jQH5hM/Jesus-matos-low.png"
     }
   ]
 }
