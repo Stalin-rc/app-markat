@@ -6,6 +6,7 @@ export interface Cliente{
     creditos:number,
     total_gastado:number,
     status_morosidad:string,
-    fecha_pago:String
+    fecha_pago:String,
+    img:string,
 
 }
