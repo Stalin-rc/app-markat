@@ -1,4 +1,4 @@
-import { Ventas } from './../models/ventas';
+import { Ventas } from '../../models/ventas';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

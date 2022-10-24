@@ -1,5 +1,5 @@
 import { Bodegueros } from './../../models/bodegueros';
-import { BodeguerosService } from './../../services/bodegueros.service';
+import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Producto } from './../../models/producto';
 import { ProductosService } from './../../services/productos.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';

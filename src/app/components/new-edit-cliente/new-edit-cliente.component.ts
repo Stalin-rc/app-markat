@@ -1,4 +1,4 @@
-import { BodeguerosService } from './../../services/bodegueros.service';
+import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Bodegueros } from './../../models/bodegueros';
 import { Cliente } from './../../models/cliente';
 import { Component, OnInit } from '@angular/core';

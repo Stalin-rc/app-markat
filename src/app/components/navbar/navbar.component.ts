@@ -1,4 +1,4 @@
-import { BodeguerosService } from './../../services/bodegueros.service';
+import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Bodegueros } from './../../models/bodegueros';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
