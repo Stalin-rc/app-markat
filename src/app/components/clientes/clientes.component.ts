@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Cliente } from './../../models/cliente';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { ClienteService } from 'src/app/services/cliente.service';
+import { ClienteService } from 'src/app/services/clients/cliente.service';
 
 @Component({
   selector: 'app-clientes',
@@ -52,6 +52,7 @@ export class ClientesComponent implements OnInit {
     )
   }
 
+  /* 
   deleteCliente(id: number) {
     this.clienteService.deleteCliente(id).subscribe({
       next: (data: Cliente) => {
@@ -63,6 +64,6 @@ export class ClientesComponent implements OnInit {
       }
     }
     )
-  }
+  }*/
 
 }

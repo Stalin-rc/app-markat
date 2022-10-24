@@ -1,6 +1,6 @@
 import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Bodegueros } from './../../models/bodegueros';
-import { VentasService } from './../../services/ventas.service';
+import { VentasService } from './../../services/sales/ventas.service';
 import { Ventas } from './../../models/ventas';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
