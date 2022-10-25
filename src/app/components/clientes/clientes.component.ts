@@ -36,7 +36,6 @@ export class ClientesComponent implements OnInit {
         this.Bodegueros = data;
       }
     )
-
   }
 
   applyFilter(event: Event) {
