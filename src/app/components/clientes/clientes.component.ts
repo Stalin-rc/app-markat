@@ -13,31 +13,17 @@ import { ClienteService } from 'src/app/services/clients/cliente.service';
 })
 export class ClientesComponent implements OnInit {
 
-  displayedColumns: string[] = ['Nombre_Apellido', 'Dni', 'Creditos', 'Total_gastado', 'Status_morosidad', 'Fecha_pago', 'imagen', 'accion'];
+  displayedColumns: string[] = ['id','dni','nombre','apellido'];
   dataSource = new MatTableDataSource<Cliente>();
-  id_cliente!:number;
-   /*Bodeguero*/
-   id!:number;
-   Bodegueros!: Bodegueros;
+  id!:number;
 
   constructor(private clienteService: ClienteService, private ActivatedRoute: ActivatedRoute, 
-    private BodeguerosService: BodeguerosService,
     private activetedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getClientes();
-    this.id_cliente=this.ActivatedRoute.snapshot.params["id"]; 
-    
-    /*Bodeguero*/
-
     this.id = this.activetedRoute.snapshot.params['id'];
-    this.BodeguerosService.getBodeguero(this.id).subscribe(
-      (data: Bodegueros) => {
-        this.Bodegueros = data;
-      }
-    )
   }
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();

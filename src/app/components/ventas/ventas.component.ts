@@ -17,8 +17,6 @@ export class VentasComponent implements OnInit {
   displayedColumns: string[] = ["cliente", "productos", "precioTotal","credito","fechaVenta","comprobante"];
   dataSource = new MatTableDataSource<Ventas>();
   id!: number;
-  Bodegueros!: Bodegueros;
-
   constructor(private ventaService: VentasService,
               private snackbar: MatSnackBar,
               private router: Router,
@@ -28,11 +26,6 @@ export class VentasComponent implements OnInit {
   ngOnInit(): void {
     this.getVentas();
     this.id = this.activetedRoute.snapshot.params['id'];
-    this.BodeguerosService.getBodeguero(this.id).subscribe(
-      (data: Bodegueros) => {
-        this.Bodegueros = data;
-      }
-    )
   }
 
   applyFilter(event: Event) {
