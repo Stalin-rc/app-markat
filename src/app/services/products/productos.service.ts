@@ -1,4 +1,4 @@
-import { Producto } from './../models/producto';
+import { Producto } from '../../models/producto';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -12,9 +12,10 @@ export class ProductosService {
   }
 
   getProductos() {
-    return this.http.get<Producto[]>('http://localhost:3000/Productos');
+    return this.http.get<Producto[]>('http://localhost:8080/api/products');
   }
 
+  /* 
   getProducto(id: number) {
     return this.http.get<Producto>('http://localhost:3000/Productos/' + id);
   }
@@ -30,5 +31,5 @@ export class ProductosService {
 
   editProducto(producto: Producto) {
     return this.http.put<Producto>('http://localhost:3000/Productos/'+producto.id, producto);
-  }
+  }*/
 }

@@ -1,7 +1,7 @@
 import { Bodegueros } from './../../models/bodegueros';
-import { BodeguerosService } from './../../services/bodegueros.service';
+import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Producto } from './../../models/producto';
-import { ProductosService } from './../../services/productos.service';
+import { ProductosService } from './../../services/products/productos.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -51,6 +51,7 @@ export class NewEditProductComponent implements OnInit {
 
   cargarFormulario() {
     if (this.id_producto != undefined) {
+      /*
       this.productoService.getProducto(this.id_producto).subscribe(
         (data: Producto) => {
           this.myForm.get('nombre')?.setValue(data.nombre);
@@ -61,7 +62,7 @@ export class NewEditProductComponent implements OnInit {
           this.myForm.get('url')?.setValue(data.img);
           this.url = data.img;
         }
-      )
+      )*/
     } else {
       this.url = "../../../assets/logo.png";
       this.id_producto = 0;
@@ -78,6 +79,8 @@ export class NewEditProductComponent implements OnInit {
       precio: this.myForm.get('precio')?.value,
       stock: this.myForm.get('unidades')?.value
     }
+
+    /*
 
     if (this.id_producto == 0) {
 
@@ -98,6 +101,6 @@ export class NewEditProductComponent implements OnInit {
           console.log(e); 
         }
       })
-    }
-  }
+    }*/
+  } 
 }

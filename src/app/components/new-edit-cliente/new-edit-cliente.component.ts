@@ -1,10 +1,10 @@
-import { BodeguerosService } from './../../services/bodegueros.service';
+import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Bodegueros } from './../../models/bodegueros';
 import { Cliente } from './../../models/cliente';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ClienteService } from 'src/app/services/cliente.service';
+import { ClienteService } from 'src/app/services/clients/cliente.service';
 
 @Component({
   selector: 'app-new-edit-cliente',
@@ -56,7 +56,7 @@ export class NewEditClienteComponent implements OnInit {
 
   cargarFormulario() {
     if (this.id_cliente != undefined) {
-      this.clienteService.getclente(this.id_cliente).subscribe(
+     /* this.clienteService.getclente(this.id_cliente).subscribe(
         (data: Cliente) => {
           this.myForm.get('nombre')?.setValue(data.nombre);
           this.myForm.get('dni')?.setValue(data.dni);
@@ -67,7 +67,7 @@ export class NewEditClienteComponent implements OnInit {
           this.myForm.get('url')?.setValue(data.img);
           this.url = data.img;
         }
-      )
+      )*/
     } else {
       this.id_cliente = 0;
     }
@@ -85,6 +85,7 @@ export class NewEditClienteComponent implements OnInit {
       img: this.myForm.get('url')?.value,
     }
 
+    /*
     if (this.id_cliente == 0) {
 
       this.clienteService.addCliente(cliente).subscribe({
@@ -104,7 +105,7 @@ export class NewEditClienteComponent implements OnInit {
           console.log(e);
         }
       })
-    }
+    }*/
   }
 
 }

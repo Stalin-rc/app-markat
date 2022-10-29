@@ -1,7 +1,7 @@
 import { Bodegueros } from './../../models/bodegueros';
-import { BodeguerosService } from './../../services/bodegueros.service';
+import { BodeguerosService } from '../../services/stores/bodegueros.service';
 import { Producto } from './../../models/producto';
-import { ProductosService } from './../../services/productos.service';
+import { ProductosService } from './../../services/products/productos.service';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
@@ -48,8 +48,7 @@ export class InventarioComponent implements OnInit {
       }
     )
   }
-
-  deleteProducto(id: number) {
+/* deleteProducto(id: number) {
     this.productService.deleteProducto(id).subscribe({
       next: (data: Producto) => {
         this.getProductos();
@@ -59,5 +58,6 @@ export class InventarioComponent implements OnInit {
         console.log(e);
       }
     })
-  }
+  }*/
+  
 }
